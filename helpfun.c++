@@ -3,6 +3,7 @@
 #include <string.h>
 using namespace std;
 
+
 int ReadNumber()
 {
     int num;
@@ -58,3 +59,12 @@ string MonthShortName(int MonthNumber) {
     string Months[12] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
     return (Months[MonthNumber - 1]);
     } 
+
+
+sDate readFullDate() {
+    sDate date;
+    date.day = ReadDay();
+    date.month = ReadMonth();
+    date.year = ReadYear();
+    return date;
+}
